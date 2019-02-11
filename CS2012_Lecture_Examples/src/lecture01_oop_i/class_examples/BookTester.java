@@ -1,4 +1,4 @@
-package lecture01_oop_i.class_examples_mw;
+package lecture01_oop_i.class_examples;
 
 public class BookTester {
 

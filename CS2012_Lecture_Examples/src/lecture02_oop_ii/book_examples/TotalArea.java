@@ -7,10 +7,10 @@ public class TotalArea {
     CircleWithPrivateDataFields[] circleArray;
 
     // Create circleArray
-    circleArray = createCircleArray();
+    circleArray = TotalArea.createCircleArray();
 
     // Print circleArray and total areas of the circles
-    printCircleArray(circleArray);
+    TotalArea.printCircleArray(circleArray);
   }
 
   /** Create an array of Circle objects */
@@ -40,7 +40,7 @@ public class TotalArea {
 
     // Compute and display the result
     System.out.printf("%-30s%-15f\n", "The total areas of circles is",
-      sum(circleArray));
+      TotalArea.sum(circleArray));
   }
 
   /** Add circle areas */
@@ -50,8 +50,9 @@ public class TotalArea {
     double sum = 0;
 
     // Add areas to sum
-    for (int i = 0; i < circleArray.length; i++)
-      sum += circleArray[i].getArea();
+    for (int i = 0; i < circleArray.length; i++) {
+		sum += circleArray[i].getArea();
+	}
 
     return sum;
   }

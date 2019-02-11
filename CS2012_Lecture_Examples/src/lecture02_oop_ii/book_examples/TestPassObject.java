@@ -9,7 +9,7 @@ public class TestPassObject {
 
     // Print areas for radius 1, 2, 3, 4, and 5.
     int n = 5;
-    printAreas(myCircle, n);
+    TestPassObject.printAreas(myCircle, n);
 
     // See myCircle.radius and times
     System.out.println("\n" + "Radius is " + myCircle.getRadius());

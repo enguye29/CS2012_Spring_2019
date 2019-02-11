@@ -9,24 +9,24 @@ public class CircleWithStaticMembers {
 
   /** Construct a circle with radius 1 */
   public CircleWithStaticMembers() {
-    radius = 1.0;
-    numberOfObjects++;
+    this.radius = 1.0;
+    CircleWithStaticMembers.numberOfObjects++;
   }
 
   /** Construct a circle with a specified radius */
   public CircleWithStaticMembers(double newRadius) {
-    radius = newRadius;
-    numberOfObjects++;
+    this.radius = newRadius;
+    CircleWithStaticMembers.numberOfObjects++;
   }
 
   /** Return numberOfObjects */
   public static int getNumberOfObjects() {
-    return numberOfObjects;
+    return CircleWithStaticMembers.numberOfObjects;
   }
 
   /** Return the area of this circle */
   public double getArea() {
-    return radius * radius * Math.PI;
+    return this.radius * this.radius * Math.PI;
   }
 }
 

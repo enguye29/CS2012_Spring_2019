@@ -9,32 +9,32 @@ public class CircleWithPrivateDataFields {
 
   /** Construct a circle with radius 1 */
   public CircleWithPrivateDataFields() {
-    numberOfObjects++;
+    CircleWithPrivateDataFields.numberOfObjects++;
   }
 
   /** Construct a circle with a specified radius */
   public CircleWithPrivateDataFields(double newRadius) {
-    radius = newRadius;
-    numberOfObjects++;
+    this.radius = newRadius;
+    CircleWithPrivateDataFields.numberOfObjects++;
   }
 
   /** Return radius */
   public double getRadius() {
-    return radius;
+    return this.radius;
   }
 
   /** Set a new radius */
   public void setRadius(double newRadius) {
-    radius = (newRadius >= 0) ? newRadius : 0;
+    this.radius = (newRadius >= 0) ? newRadius : 0;
   }
 
   /** Return numberOfObjects */
   public static int getNumberOfObjects() {
-    return numberOfObjects;
+    return CircleWithPrivateDataFields.numberOfObjects;
   }
 
   /** Return the area of this circle */
   public double getArea() {
-    return radius * radius * Math.PI;
+    return this.radius * this.radius * Math.PI;
   }
 }

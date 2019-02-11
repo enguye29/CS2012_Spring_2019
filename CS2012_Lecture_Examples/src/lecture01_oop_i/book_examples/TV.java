@@ -53,14 +53,14 @@ public class TV {
     }
 
     public void volumeUp() {
-        if (on && volumeLevel < 7) {
-            volumeLevel++;
+        if (this.on && this.volumeLevel < 7) {
+            this.volumeLevel++;
         }
     }
 
     public void volumeDown() {
-        if (on && volumeLevel > 1) {
-            volumeLevel--;
+        if (this.on && this.volumeLevel > 1) {
+            this.volumeLevel--;
         }
     }
 

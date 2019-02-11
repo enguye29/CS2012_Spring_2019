@@ -1,7 +1,5 @@
 package lecture02_oop_ii.class_examples;
 
-import java.util.Scanner;
-
 public class BookWithToStringTester {
 
 	public static void main(String[] args) {
